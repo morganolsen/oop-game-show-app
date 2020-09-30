@@ -25,7 +25,7 @@ document.addEventListener("keydown", e => {
     const buttons = Array.from(document.querySelectorAll(".keyrow button"));
     const button = buttons.filter(button => button.textContent === e.key)[0];
     const overlay = document.querySelector("#overlay");
-    if(button && overlay.style.display === 'none'){
+    if(button && overlay.style.display === 'none' && button.className === 'key'){
         game.handleInteraction(button);
     }
 });
