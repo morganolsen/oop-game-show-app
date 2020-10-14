@@ -32,7 +32,7 @@ class Game {
      * @returns {string} - The random phrase selected.
      */
     getRandomPhrase(){
-        const randomIndex = Math.ceil(Math.random() * 5) - 1;
+        const randomIndex = Math.ceil(Math.random() * this.phrases.length) - 1;
         return this.phrases[randomIndex];
     }
 
